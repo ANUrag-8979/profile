@@ -1,0 +1,79 @@
+body {
+	/* background-color: #001f4f; */
+	background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-size: cover;
+	font-family: "Raleway", sans-serif;
+}
+.color{
+	color: white;
+}
+.container {
+	width: 350px;
+	height: 500px;
+	/* background-color: #fff; */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 20px;
+	/* filter: blur(2px); */
+	backdrop-filter: blur(2.5px);
+	box-shadow: 3px 3px 5px;
+	border-radius: 8px;
+	border: 2px solid blue;
+}
+
+h1 {
+	position: absolute;
+	left: 50%;
+	top: -60px;
+	width: 300px;
+	transform: translateX(-50%);
+	background-color: #ff851b;
+	color: #fff;
+	font-weight: 100;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px;
+}
+
+.wrapper {
+	padding: 20px;
+}
+
+input,
+select {
+	width: 80%;
+	border: none;
+	border-bottom: 1px solid #0074d9;
+	padding: 10px;
+}
+
+input:focus,
+select:focus {
+	border: 1px solid #0074d9;
+	outline: none;
+}
+
+select {
+	width: 88% !important;
+}
+
+button {
+	margin: 20px auto;
+	width: 150px;
+	height: 50px;
+	background-color: #39cccc;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+}
+
+.tip {
+	text-align: center;
+	font-size: 18px;
+	display: none;
+}

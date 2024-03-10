@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://plus.unsplash.com/premium_photo-1676422355992-703feab0d80d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1hdGhzfGVufDB8fDB8fHww");
+    background-size: cover;
+    /* filter: blur(2px); */
+}
+.none{
+    display: none;
+}
+.display{
+    display: flex;
+}
+.container{
+    /* position: absolute; */
+    width: 650px;
+    height: 500px;
+    /* background-color: aqua; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    background-color: rgba(254, 255, 251, 0.038);
+    backdrop-filter: blur(2.5px);
+    border: 2px solid black;
+    border-radius: 12px;
+    justify-content: space-around;
+    box-shadow: 3px 3px 7px  #201f1f;
+    /* box-shadow: chocolate; */
+}
+
+ /* left container */
+.left-container{
+    /* position: absolute; */
+    width: 40%;
+    height: 100%;
+    /* background-color: blue; */
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* display: none; */
+    animation: slideInFromLeft 1s ease-in;
+    border-right: 2px solid black;
+}
+
+.h1{
+    font-size: 60px;
+    font-family:cursive;
+    color : #0d271e;
+}
+.font{
+    font-size: 35px;
+    font-family:serif;
+    color: #0d271e;
+}
+
+.status{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #0d271e;
+}
+  /* right container */
+.right-container{
+    width: 60%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #0d271e;
+    text-align: center;
+    color: aliceblue;
+}
+button{
+    height: 70px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #0d271e;
+    color: aliceblue;
+    font-size: 21px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
